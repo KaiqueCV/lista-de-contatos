@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <section>
+        <h2>Tags Form</h2>
+        <form action="#" autocomplete="on" name="signup" target="_blank" method="post">
+            <br>Nome: <input type="text" name="name"><br>
+            <br>Idade: <input type="number" name="age"><br>
+            <br>Senha: <input type="password" name="password"><br>
+            <br><button type="submit">Enviar</button><br>
+        </form>
+    </section>
+    <br><hr><br>
+    <section>
+        <h2>Tags Inputs e seus tipos</h2>
+        <form>
+            <labe>Text: </labe><input type="text"><br>
+            <br><labe>Number: </labe><input type="number" min="0" step="5" max="99"><br>
+            <br><labe>Range: </labe><input type="range" min="0" max="100"><br>
+            <br><label>Color: </label><input type="color"><br>
+            <br><label>E-mail: </label><input type="email"><br>
+            <br><label>Url: </label><input type="url"><br>
+            <br><label>Date: </label><input type="date"><br>
+            <br><label>Week: </label><input type="week"><br> <!--Não funciona no Firefox-->
+            <br><label>Month: </label><input type="month"><br> <!--Não funciona no Firefox-->
+            <br><label>Checkbox: </label><input type="checkbox"><br>
+            <br><label>Radio: <input type="radio" name="aceita"></label><label><input type="radio" name="aceita"></label><br>
+            <br><label>Hidden: </label><input type="hidden"><br>
+            <br><label>File: </label><input type="file" multiple><br><!--O atributo multiple permite selecionar mais de um arquivo-->
+            <br><label>Search: </label><input type="search"><br> <!--Não funciona no Firefox-->
+            <br><labe>Button: </labe><input type="submit" value="enviar"><br>
+        </form>
+    </section>
+    <br><hr><br>
+    <section>
+        <h2>Checkbox e Radio</h2>
+        <form method="post">
+            <h3>Você selecionou: Pizza de Calabresa</h3>
+            <p>Quais Opcionais você deseja?</p>
+            <input type="checkbox" disabled name="opcional[]" value="queijo"> + queijo<br>
+            <input type="checkbox" name="opcional[]" value="calabresa"> + calabresa<br>
+            <input type="checkbox" name="opcional[]" value="cebola"> + cebola<br>
+            <input type="checkbox" name="opcional[]" value="azeitona"> + azeitona<br>
+            <p>Borda recheada?</p>
+            <input type="radio" name="borda" value="sim">Sim<br>
+            <input type="radio" name="borda" value="nao">Não<br>
+            <p>Bebida</p>
+            <input type="radio" name="bebida" value="suco">Suco<br>
+            <input type="radio" name="bebida" value="refrigerante">Refrigerante<br>
+            <input type="radio" name="bebida" value="agua">Água<br>
+            <input type="radio" name="bebida" value="nenhum">Nenhum<br>
+
+            <br><button type="submit">Enviar pedido</button>
+        </form>
+    </section>
+    <br><hr><br>
+    <section>
+        <h2>Button e Seus Tipos</h2>
+            <form onsubmit="" method="get">
+                <br>Nome*: <input type="text" name="name"><br>
+                <br>Idade*: <input type="number" name="age"><br>
+                <br>Senha*: <input type="password" name="password"><br>
+
+                <br><button type="button" onclick="alert('Cliquei aqui')">Clicável</button><br>
+                <br><button type="button" onmouseover="alert('Passei o mouse aqui')">Mouse</button><br>
+                <br><button type="reset">Limpar</button><br>
+                <br><button type="submit">Enviar</button><br>
+            </form>
+    </section>
+    <br><hr><br>
+    <section>
+        <h2>Select e Seus Tipos</h2>
+        <form onsubmit="" method="get">
+            <br><label>Nome:</label><input type="text" name="name"><br>
+            <br><label>Cargo:</label>
+            <select name="role">
+                <option value="">Selecione o cargo</option>
+                <option value="gerente">Gerente</option>
+                <option value="diretor">Diretor</option>
+                <option value="presidente">Presidente</option>
+            </select><br>
+            <br><label>Assunto: </label><input type="text" name="subject"><br>
+            <br><button type="submit">Enviar</button><br>
+        </form>
+    </section>
+    <br><hr><br>
+    <section>
+        <h2>Textarea</h2>
+        <label>Mensagem</label>
+        <br><textarea name="message" rows="5" cols="50"></textarea><br>
+        <br><button type="submit">Enviar</button><br>
+    </section>
+</body>
+</html>
