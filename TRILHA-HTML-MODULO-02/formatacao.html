@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturando seu HTML + Formatações</title>
+
+    <style>
+        .row{
+            margin: 5px;
+        }
+        label {
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        fieldset {
+            margin: 10px 0;
+            border-radius: 10px;
+            border-color: rgb(223, 223, 227);
+        }
+    </style>
+</head>
+<body>
+    <h1>Estruturando seu HTML + Formatações</h1>
+    <section>
+        <h2>Formatando Textos - Part 1</h2><br>
+        <i>Programe</i> o seu futuro global agora! <br>
+        <b>Programe</b> o seu futuro global agora! <br>
+        <u>Programe</u> o seu futuro global agora! <br>
+        <b><u>Programe</u></b> o seu futuro global agora! <br>
+        <mark>Programe</mark> o seu futuro global agora! <br>
+        Programe<sup>*</sup> o seu futuro global agora! <br>
+        10<sup>2</sup>
+        10<sub>2</sub>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur incidunt dolorum voluptatum necessitatibus, quaerat accusamus obcaecati! Dolor, expedita, voluptas consectetur, tenetur a fugiat delectus ab laboriosam explicabo neque minima sint.</p>
+        <blockquote>Programe o seu futuro global agora!</blockquote>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo unde rerum reiciendis voluptatem porro distinctio, ipsa, dignissimos cum ratione dicta molestias vitae. Est porro, nisi nobis reiciendis quos animi quidem?</p><br>
+        <h3>Semântica</h3>
+        <strong>Programe</strong> o seu futuro global agora! <br>
+    </section>
+    <br><hr><br>
+    <section>
+        <h2>Formatando Textos - Part 2</h2><br>
+        <font color="#f33" face="'Trebuchet MS', Arial, Tahoma"><i>Programe</i></font> o seu futuro global agora! <br>
+    </section>
+    <br><hr><br>
+    <section>
+        <h2>Div e Span</h2><br>
+        <div id="menu-lateral">
+            <ul id="links">
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+            <br>
+            <h3>Dio<span>.</span>me</h3>
+        </div>
+    </section>
+    <br><hr><br>
+    <section>
+        <h2>Fieldsets</h2><br>
+        <h2>Formulário de cadastro</h2>
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div class="row">
+                <label>Nome:</label><input type="text">
+                <label>E-mail:</label><input type="text">
+            </div>
+            <div class="row">
+                <label>Profissão:</label><input type="text">
+                <label>Empresa:</label><input type="text">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <div class="row">
+                <label>Endereço:</label><input type="text">
+                <label>Número</label><input type="text" style="width: 30px" width="10">
+            </div>
+            <div class="row">
+                <label>Bairro:</label><input type="text">
+            </div>
+            <div class="row">
+                <label>Cidade/UF:</label><input type="text">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Informações de Contato</legend>
+            <div class="row">
+                <label>Celular:</label><input type="tel">
+                <label>Whatsapp:</label><input type="tel">
+            </div>
+            <div class="row">
+                <label>Linkedin:</label><input type="url">
+                <label>Github:</label><input type="url">
+            </div>
+        </fieldset>
+        
+        <br><button type="reset">Limpar</button>
+        <button type="submit">Enviar formulário</button>
+
+    </section>
+    <br><hr><br>
+    <section>
+        <h2>Embeds</h2>
+        <div>
+            <h2>Embeds vs Iframes</h2>
+
+            <embed src="./trailer01.mp4" type="" width="400" height="250"><br>
+
+            <video controls autoplay width="400" height="250">
+                <source src="./trailer01.mp4">
+            </video>
+
+            <p><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam vitae numquam, illo quis doloremque consequuntur fuga adipisci ullam veniam error quaerat. Perferendis libero necessitatibus at placeat neque, tenetur reprehenderit consequatur!</span><span>Nesciunt quidem iure recusandae laudantium tenetur ullam tempora cum, expedita voluptates nisi quasi officiis officia magni blanditiis assumenda aliquam aperiam magnam ex veritatis totam impedit sit? Ipsa voluptatum excepturi eaque.</span><span>Veniam perspiciatis sed nobis ea officiis minima maiores animi. Quis dolorum optio excepturi distinctio voluptates. Iure possimus nesciunt, alias modi velit iusto porro quos tenetur ad accusantium quas, deserunt vero?</span></p>
+        </div>
+    </section>
+    <br><hr><br>
+    <section>
+        <h2>Iframes</h2>
+        <iframe src="http://dio.me" width="500" height="500"></iframe><br>
+        <br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26942.975428930808!2d-43.382674492730864!3d-22.998421447400204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda482f3cf5b5%3A0xa7dd934e3fdd28bf!2sBarra%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1670197322342!5m2!1spt-BR!2sbr" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+        <br><iframe width="560" height="315" src="https://www.youtube.com/embed/D9Zk2YKBOl8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+        
+    </section>
+</body>
+</html>
