@@ -11,21 +11,23 @@ body {
     width: 1200px;
     display: flex;
     margin: 0 auto;
-    background-color: aquamarine;
+    background-color: rgb(215, 223, 220);
 }
 .main {
     display: flex;
     flex-flow: column;
-    width: 85%;
+    width: 82%;
 }
 .menu {
-    width: 15%;
-    background-color: aqua;
+    width: 18%;
+    background-color: rgb(215, 223, 220);
     padding: 10px 20px 0px;
 }
 .header {
-    background-color: rgb(5, 108, 108);
+    background-color: rgb(1, 10, 7);
     min-height: 150px;
+    padding: 30px;
+    color: aquamarine;
 }
 .content {
     background-color: white;
@@ -33,6 +35,50 @@ body {
     padding: 20px;
 }
 .footer {
-    background-color: rgb(99, 56, 240);
+    background-color: rgb(15, 15, 15);
     min-height: 150px;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.footer a {
+    color: rgb(240, 9, 9);
+    text-decoration: none;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+.especialidade {
+    padding-left: 10px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+tbody tr:hover {
+    background-color: aquamarine;
+}
+
+.row{
+    margin: 5px;
+}
+label {
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+    padding-right: 5px;
+}
+input {
+    width: 30%;
+}
+fieldset {
+    width: 80%;
+    margin: 10px 0;
+    border-radius: 10px;
+    border-color: rgb(215, 223, 220);
 }
