@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Tabelas</title>
+    <style>
+        table tr:nth-child(even){
+            background-color: aquamarine;
+        }
+        table tr:hover{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Criando tabelas</h1>
+    <section>
+        <h2>Tag table</h2>
+        <table sumary="Tabela pessoal" border="1" width="250"       align="center" cellspacing="4" cellpadding="5">
+            <caption>Tabela de idade dos usuários</caption>
+            <thead>
+                <tr>
+                    <th title="Nome Completo">Nome</th>
+                    <th title="Idade do usuário">Idade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bruno</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>Bianca</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Bernardo</td>
+                    <td>0.1</td>
+                </tr>
+                <tr>
+                    <td>José</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Cristine</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td colspan="2">by: Bruno Oliveira</td>
+                </tr>
+            </tfoot>
+        </table>
+        <br>
+        <p><strong>Tag tr:</strong> Table row</p>
+        <p><strong>Tag td:</strong> Table row</p>
+        <p><strong>Tag th:</strong> Table header</p>
+        <p><strong>Tag body:</strong> Corpo da tabela</p>
+        <p><strong>Tag thead:</strong> cabeçalho da tabela</p>
+        <p><strong>Tag tfoot:</strong> rodapé da tabela</p>
+        
+    </section>
+</body>
+</html>
