@@ -35,6 +35,15 @@ header {
     padding: 20px;
 }
 
+header h1 {
+    width: 80%;
+    text-align: center;
+}
+
+header i {
+    font-weight: 100;
+}
+
 .footer {
     display: flex;
     justify-content: space-evenly;
@@ -82,4 +91,10 @@ tbody tr:hover {
 td {
     border: 1px solid black;
     padding: 10px;
+}
+
+iframe {
+    display: flex;
+    align-content: center;
+    margin: 50px auto;
 }
