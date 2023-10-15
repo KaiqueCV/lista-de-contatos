@@ -1,10 +1,5 @@
-
 function App() {
-  return (
-    <div>
-      Lista de Contatos
-    </div>
-  );
+  return <div>Lista de Contatos</div>
 }
 
-export default App;
+export default App
