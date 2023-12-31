@@ -1,4 +1,5 @@
 import { RiContactsFill } from 'react-icons/ri'
+import { IoHome } from 'react-icons/io5'
 
 import Hero from '../../components/Hero'
 import ContactBar from '../../components/ContactBar'
@@ -11,16 +12,27 @@ const MyContacts = () => {
       <Hero
         title="Meus contatos"
         Icon={RiContactsFill}
-        returnLink="Home"
+        IconLink={IoHome}
+        titleIcon="Home"
         to="/"
       />
-      <div>
+      <S.ContainerContacts>
         <ContactBar
           name="Bruno Oliveira"
           email="bruno@email.com"
           telefone="(00) 99876-5432"
         />
-      </div>
+        <ContactBar
+          name="Bruno"
+          email="bruno@email.com"
+          telefone="(00) 99876-5432"
+        />
+        <ContactBar
+          name="Bruno Oliveira"
+          email="bruno@email.com"
+          telefone="(00) 99876-5432"
+        />
+      </S.ContainerContacts>
     </S.ContainerMyContact>
   )
 }
