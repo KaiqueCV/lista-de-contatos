@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Colors, Gradients } from '../../styles/theme'
 
 export const S = {
   Bar: styled.div`
@@ -12,7 +13,7 @@ export const S = {
     transition: all 0.6s ease;
 
     &:hover {
-      box-shadow: 2px 2px 15px #4682b4;
+      box-shadow: 2px 2px 15px ${Colors.blue150};
     }
   `,
   BoxIcon: styled.div`
@@ -24,8 +25,8 @@ export const S = {
     padding: 0.5rem;
     font-size: 2rem;
     text-align: center;
-    color: #fff;
-    background: linear-gradient(to right, #4169e1, #6495ed, #add8e6);
+    color: ${Colors.white};
+    background: linear-gradient(to right, ${Gradients.gradient1});
   `,
   BoxTitle: styled.div`
     width: 85%;
@@ -34,14 +35,14 @@ export const S = {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: #fff;
+    background: ${Colors.white};
   `,
   Title: styled.h2`
     font-size: 1.5rem;
     letter-spacing: 0.5px;
 
     a {
-      color: #4169e1;
+      color: ${Colors.blue100};
     }
   `
 }
