@@ -9,8 +9,9 @@ export const S = {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    margin: 100px auto;
+    margin: 80px auto;
     padding: 2rem;
-    background: ${Colors.blue};
+    background-color: ${Colors.blue};
+    border-radius: 10px;
   `
 }
