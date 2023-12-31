@@ -1,8 +1,17 @@
+import { RiAddLine } from 'react-icons/ri'
+import Hero from '../../components/Hero'
+import * as S from './styles'
+
 const AddContacts = () => {
   return (
-    <>
-      <h1>AddContacts</h1>
-    </>
+    <S.ContainerAddContact>
+      <Hero
+        title="Adicionar contatos"
+        Icon={RiAddLine}
+        returnLink="Home"
+        to="/"
+      />
+    </S.ContainerAddContact>
   )
 }
 
