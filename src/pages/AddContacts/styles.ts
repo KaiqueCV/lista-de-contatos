@@ -3,7 +3,9 @@ import { Colors } from '../../styles/theme'
 
 export const ContainerAddContact = styled.div`
   max-width: 1024px;
-  margin: 0 auto;
-  padding: 16px 24px;
-  background: ${Colors.blue};
+  height: 100%;
+  margin: 80px auto;
+  padding: 32px 40px;
+  background-color: ${Colors.blue};
+  border-radius: 10px;
 `
