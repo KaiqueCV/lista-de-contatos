@@ -1,17 +1,55 @@
+import { MdOutlineStar, MdStarBorder } from 'react-icons/md'
 import * as S from './styles'
+import { useState } from 'react'
+import Button from '../Button'
 
 type ContactBarProps = {
   name: string
   email: string
   telefone: string
+  handleClick?: () => void
 }
 
-const ContactBar = ({ name, email, telefone }: ContactBarProps) => (
-  <S.ContainerBar>
-    <S.Text>{name}</S.Text>
-    <S.Text>{email}</S.Text>
-    <S.Text>{telefone}</S.Text>
-  </S.ContainerBar>
-)
+const ContactBar = ({
+  name,
+  email,
+  telefone,
+  handleClick
+}: ContactBarProps) => {
+  const [favorite, setFavorite] = useState(false)
+
+  return (
+    <S.ContainerBar>
+      <S.ContainerImage>
+        <img src="https://placehold.co/200x200" alt="foto" />
+      </S.ContainerImage>
+      <S.ContainerInfo>
+        <S.ContainerTitle>
+          <S.Text>
+            Nome: <span>{name}</span>
+          </S.Text>
+          {favorite ? (
+            <MdOutlineStar onClick={() => setFavorite(!favorite)} />
+          ) : (
+            <MdStarBorder onClick={() => setFavorite(!favorite)} />
+          )}
+        </S.ContainerTitle>
+        <div>
+          <S.Text>
+            Tel: <span>{telefone}</span>
+          </S.Text>
+          <S.Text>
+            E-mail: <span>{email}</span>
+          </S.Text>
+        </div>
+
+        <S.ContainerEdit>
+          <Button title="Editar" kind="primary" onPress={handleClick} />
+          <Button title="Remover" kind="danger" onPress={handleClick} />
+        </S.ContainerEdit>
+      </S.ContainerInfo>
+    </S.ContainerBar>
+  )
+}
 
 export default ContactBar

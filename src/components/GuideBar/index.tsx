@@ -1,6 +1,5 @@
-import { NavLink } from 'react-router-dom'
 import { IconType } from 'react-icons'
-import { S } from './styles'
+import * as S from './styles'
 
 type PropsType = {
   title: string
@@ -14,11 +13,7 @@ const GuideBar = ({ title, route, Icon }: PropsType) => {
       <S.BoxIcon>
         <Icon />
       </S.BoxIcon>
-      <S.BoxTitle>
-        <S.Title>
-          <NavLink to={route}>{title}</NavLink>
-        </S.Title>
-      </S.BoxTitle>
+      <S.Title to={route}>{title}</S.Title>
     </S.Bar>
   )
 }

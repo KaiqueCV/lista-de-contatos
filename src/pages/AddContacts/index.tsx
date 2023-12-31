@@ -1,5 +1,8 @@
 import { RiAddLine } from 'react-icons/ri'
+import { IoHome } from 'react-icons/io5'
+
 import Hero from '../../components/Hero'
+
 import * as S from './styles'
 
 const AddContacts = () => {
@@ -8,7 +11,8 @@ const AddContacts = () => {
       <Hero
         title="Adicionar contatos"
         Icon={RiAddLine}
-        returnLink="Home"
+        IconLink={IoHome}
+        titleIcon="Home"
         to="/"
       />
     </S.ContainerAddContact>
