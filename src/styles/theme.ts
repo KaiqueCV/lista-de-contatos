@@ -3,7 +3,9 @@ export const Colors = {
   blue: '#f0f8ff',
   blue50: '#add8e6',
   blue100: '#4169e1',
-  blue150: '#4682b4'
+  blue150: '#4682b4',
+  yellow: '#FFD700',
+  danger: '#c53a21'
 }
 
 export const Gradients = {
