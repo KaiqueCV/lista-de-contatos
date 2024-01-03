@@ -1,6 +1,6 @@
 import * as S from './style'
 
-type InputProps = {
+type InputTextProps = {
   label?: string
   placeholder?: string
   value?: string
@@ -12,7 +12,7 @@ const InputText = ({
   placeholder,
   value = '',
   onChangeText
-}: InputProps) => {
+}: InputTextProps) => {
   return (
     <S.ContainerInput>
       <S.Label>{label}</S.Label>
