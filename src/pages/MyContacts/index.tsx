@@ -21,16 +21,19 @@ const MyContacts = () => {
           name="Bruno Oliveira"
           email="bruno@email.com"
           telefone="(00) 99876-5432"
+          image="https://placehold.co/200x200"
         />
         <ContactBar
           name="Bruno"
           email="bruno@email.com"
           telefone="(00) 99876-5432"
+          image="https://placehold.co/200x200"
         />
         <ContactBar
           name="Bruno Oliveira"
           email="bruno@email.com"
           telefone="(00) 99876-5432"
+          image="https://placehold.co/200x200"
         />
       </S.ContainerContacts>
     </S.ContainerMyContact>
