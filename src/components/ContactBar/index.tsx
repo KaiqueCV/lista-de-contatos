@@ -7,6 +7,7 @@ type ContactBarProps = {
   name: string
   email: string
   telefone: string
+  image: string
   handleClick?: () => void
 }
 
@@ -14,6 +15,7 @@ const ContactBar = ({
   name,
   email,
   telefone,
+  image,
   handleClick
 }: ContactBarProps) => {
   const [favorite, setFavorite] = useState(false)
@@ -21,7 +23,7 @@ const ContactBar = ({
   return (
     <S.ContainerBar>
       <S.ContainerImage>
-        <img src="https://placehold.co/200x200" alt="foto" />
+        <img src={image} alt="foto" />
       </S.ContainerImage>
       <S.ContainerInfo>
         <S.ContainerTitle>
